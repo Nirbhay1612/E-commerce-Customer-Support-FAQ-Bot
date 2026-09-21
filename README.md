@@ -148,5 +148,5 @@ ecommerce-customer-support-faq-bot/
 -Nirbhay Tembhurne
 
 - Github:
-[@your_usename](https://github.com/your_username)
+Nirbhay1612](https://github.com/Nirbhay1612)
 -Project: E-commerce Customer Support FAQ-Bot
