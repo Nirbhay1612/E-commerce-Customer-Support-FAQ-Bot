@@ -90,13 +90,9 @@ This project showcases my skills in AI chatbot development, API integration, Pyt
 
 ---
 
-## How to Run
+## Demo Link
 
-1. Open the project folder in **VS Code**
-2. Open `index.html`
-3. Right click → **Open with Live Server**  
-   **OR**
-4. Simply double-click `index.html` to open in browser
+https://e-commerce-customer-support-faq-bot-flq5w8awtvw6rtmuka3apo.streamlit.app/
 
 ---
 
