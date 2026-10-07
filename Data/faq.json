@@ -1,0 +1,318 @@
+[
+  {
+    "id": "FAQ001",
+    "category": "Order Tracking",
+    "question": "How can I track my order?",
+    "answer": "You can track your order by logging into your account and visiting the 'My Orders' section. Alternatively, use the tracking link sent to your registered email or WhatsApp after the order is shipped. You can also track using your Order ID on our Track Order page.",
+    "tags": ["track", "order status", "shipment", "delivery status"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ002",
+    "category": "Order Tracking",
+    "question": "Why is my order still showing as 'Processing'?",
+    "answer": "Orders typically remain in 'Processing' status for 24–48 hours while we verify payment and prepare the items for dispatch. If it has been more than 48 hours, please contact our support team with your Order ID.",
+    "tags": ["processing", "order status", "delay"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ003",
+    "category": "Shipping & Delivery",
+    "question": "How long does delivery take?",
+    "answer": "Standard delivery usually takes 3–7 business days depending on your location. Express delivery (available in select cities) takes 1–2 business days. Delivery timelines are shown at checkout before you place the order.",
+    "tags": ["delivery time", "shipping", "how long", "express"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ004",
+    "category": "Shipping & Delivery",
+    "question": "Do you offer free shipping?",
+    "answer": "Yes, we offer free standard shipping on all orders above ₹999. For orders below ₹999, a nominal shipping fee applies, which is clearly shown at checkout.",
+    "tags": ["free shipping", "delivery charges", "shipping cost"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ005",
+    "category": "Shipping & Delivery",
+    "question": "Can I change my delivery address after placing the order?",
+    "answer": "You can change the delivery address only if the order has not yet been shipped. Please contact our support team immediately with your Order ID. Once the order is out for delivery, address changes are not possible.",
+    "tags": ["change address", "update address", "delivery address"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ006",
+    "category": "Returns & Refunds",
+    "question": "What is your return policy?",
+    "answer": "We accept returns within 7 days of delivery for most products, provided they are unused, in original packaging, and with all tags intact. Certain items like personal care, innerwear, and perishable goods are non-returnable. Please check the product page for specific return eligibility.",
+    "tags": ["return policy", "return", "exchange"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ007",
+    "category": "Returns & Refunds",
+    "question": "How do I initiate a return?",
+    "answer": "Go to 'My Orders', select the item you wish to return, and click on 'Return'. Choose the reason, upload photos if required, and schedule a pickup. Our courier partner will collect the item from your address.",
+    "tags": ["initiate return", "return request", "how to return"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ008",
+    "category": "Returns & Refunds",
+    "question": "When will I receive my refund?",
+    "answer": "Once we receive and quality-check the returned product, the refund is initiated within 3–5 business days. It may take an additional 5–7 business days to reflect in your original payment method (bank account/UPI/card).",
+    "tags": ["refund", "refund time", "money back"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ009",
+    "category": "Returns & Refunds",
+    "question": "What if I received a damaged or wrong product?",
+    "answer": "We sincerely apologize for the inconvenience. Please raise a return request within 48 hours of delivery and upload clear photos of the damaged/wrong item. We will arrange a free replacement or full refund at no extra cost.",
+    "tags": ["damaged", "wrong product", "defective", "replacement"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ010",
+    "category": "Cancellations",
+    "question": "Can I cancel my order?",
+    "answer": "Yes, you can cancel your order from the 'My Orders' section as long as it is in 'Processing' or 'Confirmed' status. Once the order is shipped, cancellation is not possible. In that case, you may refuse the delivery or initiate a return after receiving it.",
+    "tags": ["cancel order", "cancellation"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ011",
+    "category": "Payments",
+    "question": "What payment methods do you accept?",
+    "answer": "We accept UPI, Credit Cards, Debit Cards, Net Banking, Wallets (Paytm, PhonePe, Amazon Pay), EMI options, and Cash on Delivery (COD) on eligible orders.",
+    "tags": ["payment methods", "upi", "cod", "card", "emi"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ012",
+    "category": "Payments",
+    "question": "Is Cash on Delivery (COD) available?",
+    "answer": "Yes, Cash on Delivery is available on most products for orders up to ₹10,000. A small COD convenience fee may apply on certain orders. COD availability is shown at checkout.",
+    "tags": ["cod", "cash on delivery"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ013",
+    "category": "Payments",
+    "question": "My payment was deducted but order was not placed. What should I do?",
+    "answer": "Sometimes the amount is temporarily blocked by the bank. It is usually refunded automatically within 3–7 business days. If it doesn’t reflect, please share the transaction ID and Order ID (if any) with our support team for quick resolution.",
+    "tags": ["payment deducted", "failed order", "money deducted"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ014",
+    "category": "Account",
+    "question": "How do I create an account?",
+    "answer": "Click on 'Sign Up' or 'Register' on the top right of the website/app. You can register using your mobile number or email address. Verify with the OTP sent to you and complete your profile.",
+    "tags": ["create account", "sign up", "register"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ015",
+    "category": "Account",
+    "question": "I forgot my password. How can I reset it?",
+    "answer": "On the login page, click on 'Forgot Password'. Enter your registered email or mobile number. You will receive an OTP or reset link to create a new password.",
+    "tags": ["forgot password", "reset password", "login issue"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ016",
+    "category": "Account",
+    "question": "How can I update my mobile number or email?",
+    "answer": "Log in to your account → Go to 'Profile' or 'Account Settings' → Edit your mobile number or email → Verify with OTP. For security reasons, some changes may require additional verification.",
+    "tags": ["update profile", "change mobile", "change email"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ017",
+    "category": "Offers & Coupons",
+    "question": "How do I apply a coupon code?",
+    "answer": "During checkout, you will find an 'Apply Coupon' or 'Promo Code' field. Enter the valid coupon code and click 'Apply'. The discount will be reflected in the order summary if the coupon is valid and applicable.",
+    "tags": ["coupon", "promo code", "discount", "apply coupon"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ018",
+    "category": "Offers & Coupons",
+    "question": "Why is my coupon not working?",
+    "answer": "Coupons may not work due to expiry, minimum order value not met, product exclusions, or if the coupon is already used. Please check the coupon terms and conditions. You can also try removing and re-applying the code.",
+    "tags": ["coupon not working", "invalid coupon", "promo issue"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ019",
+    "category": "Products",
+    "question": "How do I know if a product is genuine?",
+    "answer": "All products sold on our platform are 100% genuine and sourced directly from authorized brands and sellers. We have a strict quality check process. You can also check for authenticity seals or brand tags on the product.",
+    "tags": ["genuine", "authentic", "original product"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ020",
+    "category": "Products",
+    "question": "The product size/color I ordered is out of stock. What now?",
+    "answer": "If the exact size or color goes out of stock after you place the order, our team will contact you. You can choose an alternative size/color, wait for restock, or cancel the order for a full refund.",
+    "tags": ["out of stock", "size unavailable", "color unavailable"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ041",
+    "category": "Customer Support",
+    "question": "How can I contact customer support?",
+    "answer": "You can reach us via:\n• Live Chat on the website/app (24×7)\n• Email: support@yourstore.com\n• Phone: 1800-XXX-XXXX (Mon–Sat, 9 AM – 9 PM)\n• WhatsApp Support (link available on website)",
+    "tags": ["contact support", "customer care", "help"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ042",
+    "category": "Customer Support",
+    "question": "What are your customer support timings?",
+    "answer": "Our live chat support is available 24×7. Phone support is available Monday to Saturday from 9:00 AM to 9:00 PM. Email queries are usually responded to within 24 hours.",
+    "tags": ["support timing", "working hours", "customer care time"],
+    "language": "en"
+  },
+  {
+    "id": "FAQ021",
+    "category": "Shipping & Delivery",
+    "question": "Can I get same-day delivery?",
+    "answer": "Same-day delivery is available in selected cities on eligible products if the order is placed before the cut-off time (usually 12 PM). Availability is shown at checkout.",
+    "tags": ["same day delivery", "express", "fast delivery"]
+  },
+  {
+    "id": "FAQ022",
+    "category": "Shipping & Delivery",
+    "question": "What should I do if my package is lost or stolen?",
+    "answer": "Please contact our support team immediately with your Order ID. We will investigate with the courier partner and arrange a replacement or full refund if the package is confirmed lost.",
+    "tags": ["lost package", "stolen", "missing order"]
+  },
+  {
+    "id": "FAQ023",
+    "category": "Shipping & Delivery",
+    "question": "Do you deliver to remote or rural areas?",
+    "answer": "Yes, we deliver to most pin codes across India. However, delivery to some remote locations may take longer (7–12 business days). You can check serviceability by entering your pin code at checkout.",
+    "tags": ["remote area", "rural delivery", "pin code"]
+  },
+  {
+    "id": "FAQ024",
+    "category": "Returns & Refunds",
+    "question": "Can I return a product after 7 days?",
+    "answer": "Unfortunately, returns are accepted only within 7 days of delivery. After this period, we cannot process return requests as per our policy.",
+    "tags": ["late return", "return after 7 days"]
+  },
+  {
+    "id": "FAQ025",
+    "category": "Returns & Refunds",
+    "question": "Who pays for the return shipping?",
+    "answer": "If the return is due to a damaged, defective, or wrong product, return shipping is free. For size/color change or preference-based returns, return shipping charges may apply.",
+    "tags": ["return shipping", "return charges"]
+  },
+  {
+    "id": "FAQ026",
+    "category": "Returns & Refunds",
+    "question": "Can I exchange a product instead of returning it?",
+    "answer": "Yes, exchanges are available for size and color variants (subject to stock availability). You can select the 'Exchange' option while raising the return request.",
+    "tags": ["exchange", "size exchange", "color exchange"]
+  },
+  {
+    "id": "FAQ027",
+    "category": "Orders",
+    "question": "Can I modify my order after placing it?",
+    "answer": "You can modify your order (add/remove items or change size) only if it is still in 'Processing' status. Once shipped, modifications are not possible.",
+    "tags": ["modify order", "change order", "edit order"]
+  },
+  {
+    "id": "FAQ028",
+    "category": "Orders",
+    "question": "I ordered the wrong size. What should I do?",
+    "answer": "If the order has not been shipped, you can cancel it and place a new order. If already delivered, please raise an exchange or return request within 7 days.",
+    "tags": ["wrong size", "size issue"]
+  },
+  {
+    "id": "FAQ029",
+    "category": "Payments",
+    "question": "Do you offer EMI options?",
+    "answer": "Yes, EMI is available on orders above ₹3,000 with major credit cards and select debit cards. Available EMI plans are shown at checkout.",
+    "tags": ["emi", "installment", "easy monthly installment"]
+  },
+  {
+    "id": "FAQ030",
+    "category": "Payments",
+    "question": "Is it safe to make payments on your website?",
+    "answer": "Yes, all payments are processed through secure, encrypted payment gateways. We do not store your card or banking details on our servers.",
+    "tags": ["payment security", "safe payment", "secure"]
+  },
+  {
+    "id": "FAQ031",
+    "category": "Account",
+    "question": "How can I delete my account?",
+    "answer": "Please contact our support team with a request to delete your account. After verification, your account and personal data will be permanently removed as per our privacy policy.",
+    "tags": ["delete account", "remove account"]
+  },
+  {
+    "id": "FAQ032",
+    "category": "Account",
+    "question": "Can I have multiple accounts with the same mobile number?",
+    "answer": "No, each mobile number and email can be linked to only one account for security reasons.",
+    "tags": ["multiple accounts", "same number"]
+  },
+  {
+    "id": "FAQ033",
+    "category": "Products",
+    "question": "How do I choose the right size?",
+    "answer": "Please refer to the size guide available on every product page. Measure yourself and compare with the size chart for the best fit. If you're still unsure, contact our support team.",
+    "tags": ["size guide", "size chart", "fit"]
+  },
+  {
+    "id": "FAQ034",
+    "category": "Products",
+    "question": "Do products come with a warranty?",
+    "answer": "Yes, many electronics and appliances come with a manufacturer warranty. Warranty details are mentioned on the product page. Please keep the invoice safe for warranty claims.",
+    "tags": ["warranty", "guarantee"]
+  },
+  {
+    "id": "FAQ035",
+    "category": "Products",
+    "question": "Can I get a product demo or more details before buying?",
+    "answer": "You can check detailed product descriptions, specifications, and customer reviews on the product page. For additional queries, feel free to contact our support team.",
+    "tags": ["product details", "demo", "specifications"]
+  },
+  {
+    "id": "FAQ036",
+    "category": "Offers & Coupons",
+    "question": "Can I use more than one coupon on a single order?",
+    "answer": "No, only one coupon code can be applied per order. Bank offers and coupon codes generally cannot be combined unless specifically mentioned.",
+    "tags": ["multiple coupons", "combine offers"]
+  },
+  {
+    "id": "FAQ037",
+    "category": "Offers & Coupons",
+    "question": "Do you have a loyalty or rewards program?",
+    "answer": "Yes, we have a rewards program where you earn points on every purchase. These points can be redeemed for discounts on future orders. Check the 'Rewards' section in your account for details.",
+    "tags": ["loyalty", "rewards", "points"]
+  },
+  {
+    "id": "FAQ038",
+    "category": "Gift & Packaging",
+    "question": "Can I send a product as a gift?",
+    "answer": "Yes, you can opt for gift packaging at checkout. You can also add a personalized message. Pricing for gift wrap (if any) will be shown before payment.",
+    "tags": ["gift", "gift wrap", "personalized message"]
+  },
+  {
+    "id": "FAQ039",
+    "category": "Privacy & Security",
+    "question": "How do you protect my personal information?",
+    "answer": "We follow strict data protection practices and comply with applicable privacy laws. Your personal information is encrypted and never shared with third parties without your consent, except as required for order fulfillment.",
+    "tags": ["privacy", "data protection", "personal information"]
+  },
+  {
+    "id": "FAQ040",
+    "category": "Customer Support",
+    "question": "How can I give feedback or file a complaint?",
+    "answer": "You can share feedback through the 'Help & Support' section in your account or email us at support@yourstore.com. For complaints, please provide your Order ID for faster resolution.",
+    "tags": ["feedback", "complaint", "grievance"]
+  }
+]
