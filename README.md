@@ -178,10 +178,6 @@ The goal of this project was to build a practical, production-oriented e-commerc
 - Streamlit application development
 - Git and GitHub workflow
 
-## Screenshots
-
-
-
 
 
 
