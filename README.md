@@ -9,7 +9,7 @@ The chatbot uses a **Retrieval-Augmented Generation (RAG)** pipeline to retrieve
 
 Try the deployed chatbot here:
 
-👉 **[ShopEase Customer Support Chatbot](YOUR_STREAMLIT_APP_LINK)**
+👉 **[ShopEase Customer Support Chatbot](https://e-commerce-customer-support-faq-bot-4pnnkedbbfgxan7r8sglcs.streamlit.app/)**
 
 > The application is deployed using Streamlit.
 
