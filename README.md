@@ -22,7 +22,7 @@ Try the deployed application:
 
 ### 💬 Chatbot Response
 
-![ShopEase Chatbot Response](screenshots/response.png)
+![ShopEase Chatbot Response](screenshots/reponse.png)
 
 ## 📌 Overview
 
