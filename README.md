@@ -14,7 +14,7 @@ Try the deployed application:
 
 ### 🏠 Chatbot Home Interface
 
-![ShopEase Chatbot Home](screenshots/chathome.png)
+![ShopEase Chatbot Home](screenshots/chatbothome.png)
 
 ### 🛡️ Error Handling
 
