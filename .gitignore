@@ -1,59 +1,48 @@
-# =========================
-# Environment & Secrets
-# =========================
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
+.streamlit/secrets.toml
 
-# =========================
-# Python
-# =========================
+# Python cache
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*$py.class
 
-# =========================
-# Virtual Environment
-# =========================
-.venv/
-venv/
-env/
-
-# =========================
-# Testing
-# =========================
+# Testing and coverage
 .pytest_cache/
 .coverage
 htmlcov/
 .tox/
 
-# =========================
-# Logs
-# =========================
-logs/
-*.log
+# Type checking and linting
+.mypy_cache/
+.ruff_cache/
+.pyright/
 
-# =========================
-# ChromaDB / Generated Data
-# =========================
-chroma_db/
-
-# =========================
-# IDE
-# =========================
+# IDE settings
 .vscode/
 .idea/
 
-# =========================
-# OS
-# =========================
+# Logs
+*.log
+
+# Operating system files
 .DS_Store
 Thumbs.db
 
-# =========================
-# Temporary Files
-# =========================
+# Temporary files
 *.tmp
-*.temp
 *.bak
+
+# Local databases
+*.sqlite
+*.sqlite3
+
+# ChromaDB
+# Keep chroma_db tracked for deployment
