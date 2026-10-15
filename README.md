@@ -12,19 +12,17 @@ Try the deployed application:
 
 ## 📸 Screenshots
 
-### Home Interface
+### 🏠 Chatbot Home Interface
 
-![ShopEase Home Interface](screenshots/home.png)
+![ShopEase Chatbot Home](screenshots/chathome.png)
 
-### Customer Support Conversation
+### 🛡️ Error Handling
 
-![ShopEase Chat Interface](screenshots/chat.png)
+![ShopEase Error Handling](screenshots/error-handling.png)
 
-### RAG-Based Response
+### 💬 Chatbot Response
 
-![ShopEase RAG Response](screenshots/rag-response.png)
-
-> Screenshots are stored in the `screenshots/` directory. Replace the example filenames if your actual image filenames differ.
+![ShopEase Chatbot Response](screenshots/response.png)
 
 ## 📌 Overview
 
