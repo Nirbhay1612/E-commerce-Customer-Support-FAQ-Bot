@@ -277,10 +277,10 @@ This project demonstrates practical experience with Python application developme
 
 ## 🔗 Repository
 
-**[View Source Code on GitHub](YOUR_GITHUB_REPOSITORY_URL)**
+**[View Source Code on GitHub](https://github.com/Nirbhay1612/E-commerce-Customer-Support-FAQ-Bot)**
 
 ## 👨‍💻 Author
 
 **Nirbhay Tembhurne**
 
-- GitHub: [Your GitHub Profile](YOUR_GITHUB_PROFILE_URL)
+- GitHub: [Your GitHub Profile](https://github.com/Nirbhay1612)
