@@ -1,72 +1,110 @@
-# 🛍️ ShopEase E-commerce Customer Support Chatbot
+# 🛍️ ShopEase — E-commerce Customer Support Chatbot
 
-An AI-powered **E-commerce Customer Support FAQ Chatbot** built with Python, Streamlit, LangChain, ChromaDB, Hugging Face embeddings, and Groq.
+An AI-powered e-commerce customer support chatbot built with **Python, Streamlit, LangChain, ChromaDB, Hugging Face embeddings, and Groq**.
 
-The chatbot uses a **Retrieval-Augmented Generation (RAG)** pipeline to retrieve relevant information from an e-commerce FAQ knowledge base and generate concise, context-aware customer support responses.
+ShopEase uses **Retrieval-Augmented Generation (RAG)** to retrieve relevant information from an FAQ knowledge base and generate context-aware customer support responses.
 
----
 ## 🌐 Live Demo
 
-Try the deployed chatbot here:
+Try the deployed application:
 
-👉 **[ShopEase Customer Support Chatbot](https://e-commerce-customer-support-faq-bot-4pnnkedbbfgxan7r8sglcs.streamlit.app/)**
+**[Launch ShopEase Customer Support Chatbot](https://e-commerce-customer-support-faq-bot-4pnnkedbbfgxan7r8sglcs.streamlit.app/)**
 
-> The application is deployed using Streamlit.
+## 📸 Screenshots
+
+### Home Interface
+
+![ShopEase Home Interface](screenshots/home.png)
+
+### Customer Support Conversation
+
+![ShopEase Chat Interface](screenshots/chat.png)
+
+### RAG-Based Response
+
+![ShopEase RAG Response](screenshots/rag-response.png)
+
+> Screenshots are stored in the `screenshots/` directory. Replace the example filenames if your actual image filenames differ.
 
 ## 📌 Overview
 
-ShopEase Customer Support Chatbot is designed to automate common e-commerce customer support queries.
+ShopEase is designed to automate common e-commerce customer support queries using a retrieval-based AI workflow.
 
-The system can answer questions related to topics such as:
+The chatbot can assist with:
 
-- Orders
+- Order-related questions
 - Shipping and delivery
-- Returns
-- Refunds
+- Returns and refunds
 - Payments
-- Other FAQ-based customer support queries
+- Product information
+- General store FAQs
 
-Instead of relying only on the LLM's general knowledge, the chatbot retrieves relevant information from a structured FAQ knowledge base before generating a response.
+The application retrieves relevant FAQ information before generating a response, helping keep answers grounded in the available knowledge base.
 
-This helps reduce hallucinations and keeps responses grounded in the available business information.
+**Note:** Real-time order tracking, customer account access, and payment-system integration are not claimed unless separately implemented.
 
----
-## 🛠️ Tech Stack 
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Groq](https://img.shields.io/badge/Groq-API-F55036?style=for-the-badge)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logo=databricks&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![Sentence Transformers](https://img.shields.io/badge/Sentence%20Transformers-4B8BBE?style=for-the-badge)
-![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+## ✨ Key Features
 
-
-## ✨ Features
-
-- 🤖 AI-powered customer support chatbot
+- 🤖 AI-powered customer support
 - 🧠 Retrieval-Augmented Generation (RAG)
 - 🔎 Semantic FAQ retrieval
-- 🗄️ ChromaDB vector database
+- 🗄️ ChromaDB vector storage
 - 🔤 Hugging Face sentence-transformer embeddings
 - ⚡ Groq LLM integration
 - 💬 Conversation history support
-- 🛡️ Safe fallback responses
+- 🛡️ Fallback responses for unsupported or failed requests
 - 🚨 Centralized error handling
-- 🧹 Response cleaning and validation
-- 📝 Centralized application logging
+- 📝 Application logging
 - 🎯 Suggested customer questions
-- 🖥️ Streamlit web interface
-- 🧪 Automated test suite
-- ✅ 125 automated tests passing
+- 🖥️ Interactive Streamlit interface
+- 🧪 Automated testing with pytest
 
----
+## 🛠️ Tech Stack
 
+| Technology | Purpose |
+|---|---|
+| Python | Core application logic |
+| Streamlit | Web interface |
+| LangChain | LLM and RAG orchestration |
+| ChromaDB | Vector database |
+| Hugging Face | Text embeddings |
+| Sentence Transformers | Semantic representation of FAQ content |
+| Groq API | LLM inference |
+| Pytest | Automated testing |
+| Git and GitHub | Version control and source code hosting |
+
+## 🔄 RAG Architecture
+
+```mermaid
+flowchart TD
+    A[Customer Question] --> B[Input Validation]
+    B --> C[FAQ Retriever]
+    C --> D[ChromaDB Vector Store]
+    D --> E[Relevant FAQ Context]
+    E --> F[RAG Prompt]
+    F --> G[Groq LLM]
+    G --> H[Response Cleaning]
+    H --> I[Final Answer]
+
+    B -. Invalid Input .-> J[Fallback Response]
+    C -. Retrieval Error .-> J
+    G -. API Error .-> J
+```
+
+### Workflow
+
+1. The customer submits a question.
+2. The application validates the input.
+3. The retriever searches for relevant FAQ information.
+4. ChromaDB provides relevant stored documents.
+5. The RAG prompt combines the retrieved context with the question.
+6. The Groq LLM generates a response.
+7. The application cleans the response and returns the answer.
+8. Error handling and fallback mechanisms provide safe responses when needed.
 
 ## 📂 Project Structure
+
+```text
 E-commerce Customer Support FAQ Chatbot/
 │
 ├── app.py
@@ -77,6 +115,11 @@ E-commerce Customer Support FAQ Chatbot/
 ├── README.md
 ├── .gitignore
 ├── .env.example
+│
+├── screenshots/
+│   ├── home.png
+│   ├── chat.png
+│   └── rag-response.png
 │
 ├── Data/
 │   ├── faq.json
@@ -89,26 +132,21 @@ E-commerce Customer Support FAQ Chatbot/
 │
 ├── src/
 │   ├── __init__.py
-│   │
 │   ├── chatbot/
 │   │   ├── __init__.py
 │   │   ├── chatbot.py
 │   │   └── response_handler.py
-│   │
 │   ├── data/
 │   │   ├── __init__.py
 │   │   └── load_faq.py
-│   │
 │   ├── llm/
 │   │   ├── __init__.py
 │   │   └── llm.py
-│   │
 │   ├── rag/
 │   │   ├── __init__.py
 │   │   ├── rag_chain.py
 │   │   ├── retriever.py
 │   │   └── vectorstore.py
-│   │
 │   └── utils/
 │       ├── __init__.py
 │       ├── error_handler.py
@@ -126,60 +164,125 @@ E-commerce Customer Support FAQ Chatbot/
     ├── test_rag.py
     ├── test_retriever.py
     └── test_response_handler.py
+```
 
+> Update this tree to match the exact files and capitalization in your repository.
 
+## 🚀 Installation and Setup
 
-##🔄 RAG Workflow
-The chatbot follows this process:
-User Question
-      ↓
-Input Validation
-      ↓
-FAQ Retrieval
-      ↓
-Semantic Similarity Search
-      ↓
-Relevant FAQ Context
-      ↓
-RAG Prompt
-      ↓
-Groq LLM
-      ↓
-Response Cleaning
-      ↓
-Response Validation
-      ↓
-Final Answer
+### Prerequisites
 
-## 🚀 Future Improvements
-Potential future improvements include:
+- Python installed on your system
+- Git
+- A Groq API key
+
+### 1. Clone the Repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd YOUR_PROJECT_FOLDER
+```
+
+Replace the placeholders with your actual repository URL and folder name.
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate it on Windows PowerShell:
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+### 3. Install Dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 4. Configure Environment Variables
+
+Copy `.env.example` to `.env` in the project root.
+
+On Windows PowerShell:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+Add your own API key using the environment variable name expected by the application:
+
+```env
+GROQ_API_KEY=your_groq_api_key
+```
+
+**Security:** Never commit your real `.env` file, API keys, passwords, or other secrets to GitHub.
+
+### 5. Build the Knowledge Base
+
+```bash
+python create_kb.py
+```
+
+Run this command if your local knowledge base needs to be created before launching the application.
+
+### 6. Run the Application
+
+```bash
+streamlit run app.py
+```
+
+Open the local URL shown in your terminal.
+
+## 🧪 Testing
+
+Run the automated test suite from the project root:
+
+```bash
+pytest -v
+```
+
+To run a specific test module:
+
+```bash
+pytest -v tests/test_chatbot.py
+```
+
+Tests cover areas such as input validation, FAQ loading, retrieval, RAG formatting, fallback responses, and error handling.
+
+> Report the number of passing tests only after confirming the current test suite completes successfully.
+
+## 🔐 Security and Configuration
+
+- Keep API keys in environment variables.
+- Do not commit `.env` or other files containing secrets.
+- Use `.env.example` to document the required configuration without exposing credentials.
+- Avoid returning raw internal exceptions to end users.
+- Never request passwords, OTPs, or full payment-card details in customer conversations.
+
+## 🚧 Future Improvements
+
 - Real-time order tracking integration
 - Customer account integration
-- Product search and recommendation
-- Multilingual support
+- Product search and recommendations
+- Multilingual customer support
 - Human-agent handoff
 - Customer support analytics
-- Authentication
-- Conversation analytics
-- Production monitoring
-- Additional business knowledge sources 
+- Production monitoring and authentication
 
-## 🎯 Project Objective
-The goal of this project was to build a practical, production-oriented e-commerce customer support chatbot while demonstrating skills in:
-- Python development
-- LLM integration
-- RAG architecture
-- Vector databases
-- Semantic search
-- Prompt engineering
-- API integration
-- Error handling
-- Testing
-- Streamlit application development
-- Git and GitHub workflow
+## 🎯 Project Objectives
 
+This project demonstrates practical experience with Python application development, LLM integration, RAG architecture, vector databases, semantic retrieval, prompt engineering, API integration, error handling, testing, and Streamlit development.
 
+## 🔗 Repository
 
+**[View Source Code on GitHub](YOUR_GITHUB_REPOSITORY_URL)**
 
-## 🧑 Author
-Nirbhay Tembhurne
+## 👨‍💻 Author
+
+**Nirbhay Tembhurne**
+
+- GitHub: [Your GitHub Profile](YOUR_GITHUB_PROFILE_URL)
