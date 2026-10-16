@@ -326,26 +326,21 @@ if selected_question:
 # HANDLE USER MESSAGE
 # ============================================================
 
-if user_input:
 
+# ============================================================
+# HANDLE USER MESSAGE
+# ============================================================
+
+if user_input:
     user_input = user_input.strip()
 
     if not user_input:
         st.warning("Please enter a question.")
         st.stop()
 
-    # --------------------------------------------------------
-    # Preserve previous history BEFORE adding current message
-    # --------------------------------------------------------
+    previous_messages = list(st.session_state.messages)
 
-    previous_messages = list(
-        st.session_state.messages
-    )
-
-    # --------------------------------------------------------
-    # Add current user message to UI history
-    # --------------------------------------------------------
-
+    # Save and display the user's message
     st.session_state.messages.append(
         {
             "role": "user",
@@ -355,6 +350,38 @@ if user_input:
 
     with st.chat_message("user"):
         st.markdown(user_input)
+
+    # Generate and display the assistant response
+    with st.chat_message("assistant"):
+        with st.spinner("Thinking..."):
+            try:
+                response = generate_response(
+                    user_input=user_input,
+                    previous_messages=previous_messages,
+                )
+
+                if not isinstance(response, str) or not response.strip():
+                    response = (
+                        "Sorry, I couldn't generate a response. "
+                        "Please try again."
+                    )
+
+            except Exception as e:
+                st.error(f"Failed to generate response: {e}")
+                response = (
+                    "Sorry, something went wrong while processing "
+                    "your question. Please try again."
+                )
+
+        st.markdown(response)
+
+    # Always preserve the assistant response in chat history
+    st.session_state.messages.append(
+        {
+            "role": "assistant",
+            "content": response,
+        }
+    )
 
     # --------------------------------------------------------
     # Generate response
