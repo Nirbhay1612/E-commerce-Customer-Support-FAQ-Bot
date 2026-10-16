@@ -93,26 +93,15 @@ def normalize_chat_history(
 # Main Chatbot Function
 # -------------------------------------------------------------------
 
+
 def get_bot_response(
     user_message: str,
     chat_history: Optional[list[BaseMessage]] = None,
 ) -> str:
     """
     Generate a chatbot response using the RAG pipeline.
-
-    Args:
-        user_message:
-            Current customer question.
-
-        chat_history:
-            Previous conversation messages.
-
-    Returns:
-        Safe, user-facing chatbot response.
     """
 
-    # Keep the cleaned message outside the try block so it is
-    # always available for fallback detection.
     cleaned_message = (
         user_message.strip()
         if isinstance(user_message, str)
@@ -120,34 +109,23 @@ def get_bot_response(
     )
 
     try:
-        # ------------------------------------------------------------
         # Validate input
-        # ------------------------------------------------------------
+        cleaned_message = validate_user_message(user_message)
 
-        cleaned_message = validate_user_message(
-            user_message
-        )
-
-        # ------------------------------------------------------------
         # Normalize conversation history
-        # ------------------------------------------------------------
+        history = normalize_chat_history(chat_history)
 
-        history = normalize_chat_history(
-            chat_history
-        )
-
-        # ------------------------------------------------------------
-        # Handle simple fallback intents
-        # ------------------------------------------------------------
-
+        # Handle simple conversational fallbacks
         fallback_intent = detect_fallback_intent(
             cleaned_message
         )
 
-        if fallback_intent != "default":
-            response = get_fallback(
-                fallback_intent
-            )
+        if fallback_intent in {
+            "greeting",
+            "thanks",
+            "escalate",
+        }:
+            response = get_fallback(fallback_intent)
 
             log_info(
                 f"Fallback response used: {fallback_intent}"
@@ -155,26 +133,16 @@ def get_bot_response(
 
             return response
 
-        # ------------------------------------------------------------
-        # Generate RAG response
-        # ------------------------------------------------------------
-
-        log_info(
-            "Processing customer support request."
-        )
+        # Generate RAG response for FAQ questions
+        log_info("Processing customer support request.")
 
         raw_response = get_rag_response(
             question=cleaned_message,
             chat_history=history,
         )
 
-        # ------------------------------------------------------------
         # Clean and validate response
-        # ------------------------------------------------------------
-
-        response = handle_response(
-            raw_response
-        )
+        response = handle_response(raw_response)
 
         log_info(
             "Customer support response generated successfully."
@@ -182,41 +150,20 @@ def get_bot_response(
 
         return response
 
-    # ---------------------------------------------------------------
-    # Validation errors
-    # ---------------------------------------------------------------
-
     except ValueError as error:
+        log_error("Invalid chatbot request.", error)
 
-        log_error(
-            "Invalid chatbot request.",
-            error,
-        )
-
-        # Only use intent-based fallback when we actually
-        # have a valid customer message.
         if cleaned_message:
-            intent = detect_fallback_intent(
-                cleaned_message
-            )
-
+            intent = detect_fallback_intent(cleaned_message)
             return get_fallback(intent)
 
         return get_fallback("default")
 
-    # ---------------------------------------------------------------
-    # Unexpected / runtime / API errors
-    # ---------------------------------------------------------------
-
     except Exception as error:
-
-        log_error(
-            "Chatbot request failed.",
-            error,
-        )
-
+        log_error("Chatbot request failed.", error)
         return handle_error(error)
 
+    
 
 # -------------------------------------------------------------------
 # Terminal Chat Mode
